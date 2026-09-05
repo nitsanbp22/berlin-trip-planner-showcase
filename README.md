@@ -1,10 +1,54 @@
 # Berlin Trip Planner | Collaborative Map-Based Travel Planning Product
 
-**Live travel planning product | Product, UI/UX, Maps & Integrations Showcase**
+**Live private product | Product Management, UI/UX, Maps & Integrations**
 
-Berlin Trip Planner is a private collaborative travel product I built for a real trip to Berlin. It brought places, daily planning, maps, favorites, visited status, packing, tasks and notes into one shared experience that could be used both before the trip and while moving through the city.
+Berlin Trip Planner is a collaborative travel product I built for a real trip to Berlin. It brought places, daily planning, maps, favorites, visited status, packing, tasks and notes into one shared experience that could be used both before the trip and while moving through the city.
+
+The current product contains **130 curated places across 7 trip days**, with a map-first planning layer, Google Places enrichment, shared trip state and personal travel tools.
 
 > This repository is a curated portfolio showcase. The private live product, personal trip data, credentials and production history are intentionally excluded.
+
+## Product preview
+
+### Trip-wide planning
+
+![Trip planning overview](assets/screenshots/berlin-overview-desktop.png)
+
+A trip-wide planning view turns seven days into a clear itinerary structure while keeping access to trip-level actions and place management.
+
+### Map-first exploration
+
+| Full saved-place map | Day-specific map |
+| --- | --- |
+| <img src="assets/screenshots/berlin-map-all-mobile.png" alt="Berlin map with all saved places" width="360"> | <img src="assets/screenshots/berlin-map-day-mobile.png" alt="Berlin map filtered to one trip day" width="360"> |
+
+The full map supports spatial discovery across 130 places. Filtering to a day reduces the city into an actionable route with ordered stops, while curated walking zones help users reason about neighborhoods rather than isolated POIs.
+
+### Daily itinerary
+
+<img src="assets/screenshots/berlin-itinerary-mobile.png" alt="Ordered mobile itinerary" width="420">
+
+The mobile itinerary was designed for actual in-trip use, with stop order, reordering, favorites, visited state and direct actions available without returning to a desktop planning view.
+
+### Place intelligence
+
+| Planning view | Travel context and handoff |
+| --- | --- |
+| <img src="assets/screenshots/berlin-place-details-top-mobile.png" alt="Berlin place details and day assignment" width="360"> | <img src="assets/screenshots/berlin-place-details-bottom-mobile.png" alt="Historical context visit tips and Google Maps handoff" width="360"> |
+
+A place is more than a pin. The detail experience combines imagery, category, visit metadata, flexible day assignment, historical context, highlights, recommended visit duration and a direct Google Maps handoff when navigation is needed.
+
+### Shared trip, personal preparation
+
+<img src="assets/screenshots/berlin-packing-mobile.png" alt="Personal packing workflow" width="420">
+
+The product separates shared trip planning from personal preparation. Packing belongs to the individual user, while other trip information can be shared when collaboration is useful.
+
+### Desktop map workspace
+
+![Desktop map and list workspace](assets/screenshots/berlin-map-split-desktop.png)
+
+On desktop, the map and ordered place list work together so users can reason about both geography and itinerary structure without losing context.
 
 ## Why I built it
 
@@ -23,10 +67,10 @@ The product goal was to turn that fragmented planning process into one usable sy
 
 The live product includes:
 
-- 100+ curated places across Berlin and nearby destinations
-- six planned trip days with ordered stops
+- 130 curated places across Berlin and nearby destinations
+- seven trip days with ordered stops
 - interactive map with category-specific markers
-- day-specific map context and walking areas
+- day-specific map context and curated walking areas
 - favorites and visited states
 - relative price indicators for food locations
 - hotel context
@@ -165,7 +209,7 @@ Two travelers share the trip, but they do not necessarily share packing lists, e
 
 ### Dense information needs progressive context
 
-With more than 100 places, showing everything with equal visual weight would make the product unusable. Day filters, categories, map state, optional places and status indicators reduce cognitive load.
+With 130 places, showing everything with equal visual weight would make the product unusable. Day filters, categories, map state, optional places and status indicators reduce cognitive load.
 
 ## Architecture at a glance
 
@@ -217,7 +261,7 @@ See [SHOWCASE_SCOPE.md](SHOWCASE_SCOPE.md) and [SECURITY.md](SECURITY.md).
 
 ## Case study
 
-For a deeper view of the product reasoning, see:
+For a deeper view of the product reasoning and visual walkthrough, see:
 
 [Product Case Study](docs/PRODUCT_CASE_STUDY.md)
 
