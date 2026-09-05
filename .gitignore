@@ -1,0 +1,33 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and build output
+node_modules/
+.next/
+dist/
+out/
+coverage/
+
+# Local tooling
+.vercel/
+.wrangler/
+.supabase/
+supabase/.temp/
+
+# Test and logs
+playwright-report/
+test-results/
+*.log
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Internal tooling
+.agents/
