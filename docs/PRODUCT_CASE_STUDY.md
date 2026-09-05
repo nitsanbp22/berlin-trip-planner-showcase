@@ -11,6 +11,8 @@ The product was built for two real travelers and had to work in two very differe
 
 That dual context shaped the product more than the technology did.
 
+The current product contains 130 curated places organized across 7 trip days.
+
 ## Product problem
 
 The main pain points were:
@@ -135,6 +137,48 @@ The geographic stack was deliberately split:
 
 This made it possible to keep the planner's own product model independent of any single mapping provider.
 
+## Visual product walkthrough
+
+### 1. Turn the trip into a navigable structure
+
+![Trip overview](../assets/screenshots/berlin-overview-desktop.png)
+
+The overview transforms the full trip into day-level planning units. The goal is to make the trip understandable at a glance before opening individual locations or maps.
+
+### 2. Move between discovery and action
+
+| All saved places | One actionable day |
+| --- | --- |
+| <img src="../assets/screenshots/berlin-map-all-mobile.png" alt="All saved Berlin places on mobile map" width="360"> | <img src="../assets/screenshots/berlin-map-day-mobile.png" alt="One Berlin trip day on mobile map" width="360"> |
+
+The all-trip map supports exploration and geographic understanding. The day-filtered state changes the same map into an execution tool by surfacing only the current route and numbered stop order.
+
+### 3. Support in-trip decisions on mobile
+
+<img src="../assets/screenshots/berlin-itinerary-mobile.png" alt="Ordered mobile Berlin itinerary" width="420">
+
+The itinerary gives each stop a clear position while keeping actions close to the item: reorder, favorite, mark visited or open the place. This was designed for quick decisions while already moving through the city.
+
+### 4. Make a place useful before and during the visit
+
+| Planning and assignment | Context and navigation |
+| --- | --- |
+| <img src="../assets/screenshots/berlin-place-details-top-mobile.png" alt="Berlin place planning details" width="360"> | <img src="../assets/screenshots/berlin-place-details-bottom-mobile.png" alt="Berlin place travel context and navigation" width="360"> |
+
+The detail view combines two jobs that are often split across products. Before the visit, it helps users evaluate and schedule the place. During the trip, it provides context, visit timing and a direct handoff to Google Maps.
+
+### 5. Keep personal preparation inside the trip workflow
+
+<img src="../assets/screenshots/berlin-packing-mobile.png" alt="Personal packing list inside Berlin trip planner" width="420">
+
+Packing is intentionally personal even though the trip is shared. This screen demonstrates how collaboration was modeled at the product level rather than assuming all trip data should have the same visibility.
+
+### 6. Use the extra desktop space for comparison
+
+![Desktop map and list](../assets/screenshots/berlin-map-split-desktop.png)
+
+The desktop workspace combines spatial context and list detail instead of forcing the user to switch between separate views. This is useful during deeper planning, while the mobile experience prioritizes fast in-trip actions.
+
 ## Real-world iteration
 
 Because the product was used during the actual trip, several decisions could be evaluated against real behavior rather than assumptions.
@@ -158,4 +202,4 @@ The project reinforced several principles that are relevant beyond travel produc
 3. Integrations are most useful when they enrich a stable internal product model.
 4. Dense information systems need hierarchy and progressive context.
 5. A real usage environment can reveal friction that is invisible in desktop-only planning.
-6. "Map feature" is often a product-state visualization problem, not just a technical integration problem.
+6. A map feature is often a product-state visualization problem, not just a technical integration problem.
